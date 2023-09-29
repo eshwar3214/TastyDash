@@ -1,0 +1,79 @@
+TastyDash promises
+
+The problem this project is solving is delivering a list of items to hostel students.
+
+
+
+navbar - home,cart,login,my orders
+
+list of items - [ samosa-10,book-20,pen-5,bajji -30,punugulu-10]
+
+so the idea is to give the user the ability to order items from a list of given items and if the item is not available we will give the user the ability to add it to the list of items.
+
+
+The delivery partner will deliver the items to respective users every evening at 6 pm and orders placed till 5:30 pm are only deliverable on the same day and any order placed after 
+that time will be delivered the following day.
+
+
+The delivery cost for each item is 10 % of the item.
+
+index.html- home page i.e landing page
+
+
+
+admin.html -for the admin to monitor the application and to view insights
+
+so, there are three roles in the system that are customer, delivery partner,admin
+
+so there should be a collection for storing user that also should contain a row for the role he is playing
+
+
+the attributes of user are
+-> userid
+-> name
+-> student id
+-> room no
+-> hostel
+-> phone no
+-> role
+-> password that has to be hashed
+
+
+Next the customer selects the items he wishes to be delivered to his room from the home page and add them to cart 
+
+the attributes of item are
+-> itemid
+-> name
+-> description
+-> cost per item
+-> isAvailable (whether the item is in stock or not)
+
+Then he checks the items and places the order
+
+the attirbutes of order are 
+-> orderid
+-> customerid
+-> timestamp
+-> items (this has to be the list of items he is placing the order)
+-> total cost
+
+
+now we need to design a signup page that takes all the details of the customer and entries it in the users collection
+and we need to design a signin page .
+
+we also need deliverypartner signin page and adimin signin page
+
+for delivery partners it should show orders.html -for the delivery partner to look out for the orders placed before 5:30 pm
+
+for admin he should be able to add items to the list and monitor the app
+
+
+so for the basic prototype of the app we need following pages
+
+landing page
+signup page
+signin page
+home page
+orders page for the customer to look out for the placed orders by him
+admin page to add new items
+deliverypartner page for looking for orders placed till 5:30 pm

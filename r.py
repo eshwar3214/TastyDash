@@ -1,4 +1,5 @@
 from collections import deque
+
 class Graph:
     def __init__(self,Nodes,isDirected=False):
         self.nodes=Nodes
@@ -37,11 +38,13 @@ class Graph:
                 if neighbour not in visited:
                     visited.add(neighbour)
                     q.append(neighbour)
+        
 
+    def dfs(self,node):
+        pass
 
 
     
-
 
 
 l=[1,2,3,4,5]
